@@ -164,3 +164,14 @@ int main(){
     
     return 0;
 }
+
+/*
+
+*************  Exercice 4 ***************
+
+Pour ajouter des sorts qui fonctionnent différemment des monstres, on peut créer la classe "Carte"
+et faire hériter la classe "Monstre" et une nouvelle classe "Sorts" de cette classe "Carte".
+Les monstres et les sorts pourront alors être gérés de la même manière vis-à-vis du deck et de la main,
+mais avoir des comportements différents dans leur incantation.
+
+*/
