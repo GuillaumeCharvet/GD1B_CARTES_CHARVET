@@ -10,18 +10,21 @@ class Monstre{
         std::string _nom;
         int _attaque;
         int _pdv;
+        int _cout_mana;
         bool _dispo;
         bool _vivant;
         
     public:
 
-        Monstre(std::string nom, int attaque, int pdv);
+        Monstre(std::string nom, int attaque, int pdv, int coutmana);
 
         void affiche();
 
         int getAttaque();
 
         int getHp();
+
+        int getMana();
 
         void setHp(int hp);
 

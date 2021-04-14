@@ -5,11 +5,10 @@
 #include <iostream>
 #include <algorithm>
 
-    Monstre::Monstre(std::string nom, int attaque, int pdv) : _nom(nom), _attaque(attaque), _pdv(pdv), _dispo(true), _vivant(true){}
+    Monstre::Monstre(std::string nom, int attaque, int pdv, int coutmana) : _nom(nom), _attaque(attaque), _pdv(pdv), _dispo(true), _vivant(true), _cout_mana(coutmana){}
 
     void Monstre::affiche(){
-        std::cout << "***********************" << std::endl;
-        std::cout << "Le monstre " << _nom << " possède " << _pdv << " points de vie, a une attaque de " << _attaque;
+        std::cout << "Le monstre " << _nom << " possède " << _pdv << " points de vie, a une attaque de " << _attaque << ", coûte " << _cout_mana << " mana";
         if (_dispo){std::cout << " et est prêt à attaquer !" << std::endl;}
         else {std::cout << " et doit se reposer à ce tour." << std::endl;}        
     }
@@ -20,6 +19,10 @@
 
     int Monstre::getHp(){
         return _pdv;
+    }
+
+    int Monstre::getMana(){
+        return _cout_mana;
     }
 
     void Monstre::setHp(int hp){
