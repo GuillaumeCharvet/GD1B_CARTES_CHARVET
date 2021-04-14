@@ -167,6 +167,12 @@ int main(){
 
 /*
 
+******** Ajout pour l'Exercice 3 ********
+
+Certaines méthodes auraient nécessiter d'utiliser des pointeurs plutôt que directement les monstres par exemple,
+je l'ai fait pour certaines mais pas pour toutes, ce qui amène à certaines méthodes qui ne font pas ce pour quoi
+elles ont été crées.
+
 *************  Exercice 4 ***************
 
 Pour ajouter des sorts qui fonctionnent différemment des monstres, on peut créer la classe "Carte"
